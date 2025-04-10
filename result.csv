@@ -1,0 +1,2 @@
+domain,hasMX,hasSPF,sprRecord,hasDMARC,dmarcRecord
+google.com,true,true,v=spf1 include:_spf.google.com ~all,false,
