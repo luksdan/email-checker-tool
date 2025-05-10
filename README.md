@@ -1,38 +1,36 @@
-# Domain Scanner (MX, SPF, DMARC)
+Domain Scanner (MX, SPF, DMARC)
+This is a Go utility that automatically checks whether one or more domains have MX, SPF, and DMARC records and exports the results to a CSV file.
 
-Este é um utilitário em Go que verifica automaticamente se um ou mais domínios possuem registros de **MX**, **SPF** e **DMARC** e exporta os resultados em um arquivo CSV.
+## Features
+Checks if the domain has an MX (Mail Exchange) record
 
-## Funcionalidades
+Detects if the domain has an SPF (Sender Policy Framework) record and captures its value
 
-- Verifica se o domínio possui registro **MX** (Mail Exchange)
-- Identifica se o domínio possui registro **SPF** (Sender Policy Framework) e captura o valor
-- Identifica se o domínio possui registro **DMARC** e captura o valor
-- Exporta os resultados no arquivo `result.csv`
+Detects if the domain has a DMARC record and captures its value
 
-## Requisitos
+Exports the results to the result.csv file
 
-- Go 1.16 ou superior instalado
+## Requirements
+Go 1.16 or higher installed
 
-## Instalação
-
-Clone o repositório e compile o projeto:
-
+## Installation
+Clone the repository and build the project:
 ```bash
-git clone https://github.com/seu-usuario/domain-scanner.git
+git clone https://github.com/your-username/domain-scanner.git
 cd domain-scanner
 go build -o domain-scanner
 ```
-
-## Como usar
-Rode o programa e digite os domínios (um por linha). Finalize com Ctrl+D (Linux/Mac) ou Ctrl+Z + Enter (Windows):
+💡 How to use
+Run the program and enter the domains (one per line). Finish by pressing Ctrl+D (Linux/Mac) or Ctrl+Z + Enter (Windows):
 ```bash
 ./domain-scanner
 google.com
 example.com
-seu-dominio.com
+your-domain.com
 ```
-
-## Exemplo de saída (result.csv)
+📄 Example output (result.csv)
+```csv
 domain,hasMX,hasSPF,spfRecord,hasDMARC,dmarcRecord
 google.com,true,true,v=spf1 include:_spf.google.com ~all,true,v=DMARC1; p=none; rua=mailto:dmarc-reports@google.com
 example.com,false,false,,false,
+```
