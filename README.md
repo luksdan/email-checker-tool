@@ -1,17 +1,17 @@
-Domain Scanner (MX, SPF, DMARC)
+# Domain Scanner (MX, SPF, DMARC)
 This is a Go utility that automatically checks whether one or more domains have MX, SPF, and DMARC records and exports the results to a CSV file.
 
 ## Features
-Checks if the domain has an MX (Mail Exchange) record
+- Checks if the domain has an MX (Mail Exchange) record
 
-Detects if the domain has an SPF (Sender Policy Framework) record and captures its value
+- Detects if the domain has an SPF (Sender Policy Framework) record and captures its value
 
-Detects if the domain has a DMARC record and captures its value
+- Detects if the domain has a DMARC record and captures its value
 
-Exports the results to the result.csv file
+- Exports the results to the result.csv file
 
 ## Requirements
-Go 1.16 or higher installed
+- Go 1.16 or higher installed
 
 ## Installation
 Clone the repository and build the project:
