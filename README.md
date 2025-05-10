@@ -16,14 +16,14 @@ This is a Go utility that automatically checks whether one or more domains have 
 ## Installation
 Clone the repository and build the project:
 ```bash
-git clone https://github.com/your-username/domain-scanner.git
-cd domain-scanner
-go build -o domain-scanner
+git clone https://github.com/luksdan/email-checker-tool.git
+cd email-checker-tool
+go build -o email-checker-tool
 ```
 ## How to use
 Run the program and enter the domains (one per line). Finish by pressing Ctrl+D (Linux/Mac) or Ctrl+Z + Enter (Windows):
 ```bash
-./domain-scanner
+./email-checker-tool
 google.com
 example.com
 your-domain.com
