@@ -20,7 +20,7 @@ git clone https://github.com/your-username/domain-scanner.git
 cd domain-scanner
 go build -o domain-scanner
 ```
-💡 How to use
+## How to use
 Run the program and enter the domains (one per line). Finish by pressing Ctrl+D (Linux/Mac) or Ctrl+Z + Enter (Windows):
 ```bash
 ./domain-scanner
@@ -28,7 +28,7 @@ google.com
 example.com
 your-domain.com
 ```
-📄 Example output (result.csv)
+## Example output (result.csv)
 ```csv
 domain,hasMX,hasSPF,spfRecord,hasDMARC,dmarcRecord
 google.com,true,true,v=spf1 include:_spf.google.com ~all,true,v=DMARC1; p=none; rua=mailto:dmarc-reports@google.com
