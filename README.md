@@ -21,16 +21,18 @@ Clone o repositório e compile o projeto:
 git clone https://github.com/seu-usuario/domain-scanner.git
 cd domain-scanner
 go build -o domain-scanner
+```
 
-Como usar
-
+## Como usar
+Rode o programa e digite os domínios (um por linha). Finalize com Ctrl+D (Linux/Mac) ou Ctrl+Z + Enter (Windows):
+```bash
 ./domain-scanner
 google.com
 example.com
 seu-dominio.com
+```
 
-Exemplo de saída (result.csv)
-
+## Exemplo de saída (result.csv)
 domain,hasMX,hasSPF,spfRecord,hasDMARC,dmarcRecord
 google.com,true,true,v=spf1 include:_spf.google.com ~all,true,v=DMARC1; p=none; rua=mailto:dmarc-reports@google.com
 example.com,false,false,,false,
